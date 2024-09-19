@@ -8,12 +8,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common DroidX-UI stuff
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # Inherit from r5x device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+TARGET_DISABLE_EPPE := true
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
@@ -21,7 +22,11 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := false
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := r5x
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := aosp_r5x
+PRODUCT_NAME := droidx_r5x
 PRODUCT_MODEL := realme 5 Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+# DroidX-UI stuff
+DROIDX_BUILD_TYPE := OFFICIAL
+DROIDX_GAPPS := true
