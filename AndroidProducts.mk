@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_r5x.mk
+    $(LOCAL_DIR)/droidx_r5x.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_r5x-user \
-    aosp_r5x-userdebug \
-    aosp_r5x-eng
+    droidx_r5x-user \
+    droidx_r5x-userdebug \
+    droidx_r5x-eng
