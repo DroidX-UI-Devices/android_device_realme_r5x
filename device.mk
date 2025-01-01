@@ -235,6 +235,8 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.1.vendor \
     android.hardware.media.c2@1.2.vendor
 
+TARGET_SUPPORTS_OMX_SERVICE := false
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
